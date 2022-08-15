@@ -2,7 +2,7 @@
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Panchang", sans-serif;
@@ -23,11 +23,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   padding: 2em 0;
   font-weight: 700;
@@ -36,7 +36,7 @@ li {
 
 .nav__nav-links {
   -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
@@ -52,7 +52,7 @@ li {
 
 .nav__nav-links.active {
   -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .nav__nav-links li {
@@ -76,11 +76,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
@@ -89,7 +89,7 @@ li {
 
 .nav__menu:hover {
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
   will-change: transform;
 }
 
@@ -97,15 +97,19 @@ li {
   position: relative;
   width: 100%;
   height: 4px;
-  -webkit-transition: background-color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,
+    -webkit-transform 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,
+    -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    -webkit-transform 0.2s ease-in-out;
   border-radius: 50px;
   background-color: black;
 }
 
-.nav__menu .burger-line::before, .nav__menu .burger-line::after {
+.nav__menu .burger-line::before,
+.nav__menu .burger-line::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -120,17 +124,17 @@ li {
 
 .nav__menu .burger-line::before {
   -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 
 .nav__menu .burger-line::after {
   -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  transform: translateY(15px);
 }
 
 .nav__menu.open .burger-line::before {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .nav__menu.open .burger-line {
@@ -139,7 +143,7 @@ li {
 
 .nav__menu.open .burger-line::after {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .hero {
@@ -191,9 +195,9 @@ li {
 .hero__avatar {
   cursor: pointer;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transform: perspective(5000px);
-          transform: perspective(5000px);
+  transform: perspective(5000px);
   position: absolute;
   right: 0;
   top: 4rem;
@@ -204,7 +208,7 @@ li {
 
 .hero__avatar .profile {
   -webkit-transform: translateZ(15px);
-          transform: translateZ(15px);
+  transform: translateZ(15px);
   width: 100%;
 }
 
@@ -228,8 +232,8 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: color 0.3s ease-out, fill 0.3s ease-in-out;
   transition: color 0.3s ease-out, fill 0.3s ease-in-out;
 }
@@ -263,13 +267,13 @@ li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .works-section > * {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
 .works-section__slide {
@@ -277,8 +281,8 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -298,13 +302,13 @@ li {
 .works-section__slide .left::before {
   position: absolute;
   content: "";
-  background-image: url(../src/assets/Squares.png);
+  background-image: url(../My-portfolio/src/assets/Squares.png);
   background-size: cover;
   width: 100%;
   height: 100%;
   opacity: 0.1;
   -webkit-box-shadow: #e8ebe8 inset 0 0 50rem 10rem;
-          box-shadow: #e8ebe8 inset 0 0 50rem 10rem;
+  box-shadow: #e8ebe8 inset 0 0 50rem 10rem;
 }
 
 .works-section__slide .left .texts q {
@@ -339,20 +343,21 @@ li {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transition: -webkit-transform 0.9s, -webkit-filter 1.5s ease-in-out;
   transition: -webkit-transform 0.9s, -webkit-filter 1.5s ease-in-out;
   transition: transform 0.9s, filter 1.5s ease-in-out;
-  transition: transform 0.9s, filter 1.5s ease-in-out, -webkit-transform 0.9s, -webkit-filter 1.5s ease-in-out;
+  transition: transform 0.9s, filter 1.5s ease-in-out, -webkit-transform 0.9s,
+    -webkit-filter 1.5s ease-in-out;
 }
 
 .works-section__slide .right:hover img {
   -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+  filter: grayscale(0%);
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .work-1:first-child {
@@ -402,11 +407,11 @@ li {
 
 .works-section-mobile__works-image img {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #section-title-about-me {
@@ -434,11 +439,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .about-me-section__left-avatar .image-wrapper {
@@ -454,12 +459,12 @@ li {
   z-index: -1;
   position: absolute;
   -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
+  transform: translateX(-10%);
   top: 10%;
   width: 125%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: 1px solid #191919;
 }
 
@@ -470,7 +475,7 @@ li {
   z-index: 2;
   width: clamp(3rem, 9vw, 7rem);
   -webkit-animation: rotate 10s linear infinite;
-          animation: rotate 10s linear infinite;
+  animation: rotate 10s linear infinite;
 }
 
 .about-me-section__right-texts > span {
@@ -491,22 +496,22 @@ li {
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -537,11 +542,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 5em;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .skills-section__grid-container .skill {
@@ -581,10 +586,10 @@ li {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("/src/assets/Squares.png");
+  background-image: url("/My-portfolio/src/assets/Squares.png");
   opacity: 0.1;
   -webkit-box-shadow: 0 0 10rem 5rem #e8ebe8 inset;
-          box-shadow: 0 0 10rem 5rem #e8ebe8 inset;
+  box-shadow: 0 0 10rem 5rem #e8ebe8 inset;
 }
 
 .contact-section__contents {
@@ -595,15 +600,15 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .contact-section__contents > * + * {
@@ -651,7 +656,7 @@ li {
   bottom: 0;
   padding-left: calc(100% + (var(--section-padding) + 2%));
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer {
@@ -679,11 +684,11 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact-main-wrapper {
@@ -698,8 +703,8 @@ main {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .form-wrapper form .input-name {
@@ -772,11 +777,11 @@ main {
   }
   .nav__menu .burger-line::after {
     -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
+    transform: translateY(-12px);
   }
   .nav__menu .burger-line::before {
     -webkit-transform: translateY(12px);
-            transform: translateY(12px);
+    transform: translateY(12px);
   }
   .contact-main-wrapper {
     width: 100%;
@@ -844,7 +849,7 @@ main {
 
 .overlay {
   -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
   z-index: 99;
   position: fixed;
   width: 100%;
@@ -858,7 +863,7 @@ main {
 
 .overlay.active {
   -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 body {
@@ -875,9 +880,9 @@ body {
   z-index: 99;
   pointer-events: none;
   -webkit-transform-origin: top;
-          transform-origin: top;
+  transform-origin: top;
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  transform: scaleY(0);
 }
 
 .transition:nth-child(1) {
@@ -978,8 +983,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
   }
@@ -1004,8 +1009,8 @@ body {
   }
   .about-me-section__left-avatar {
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
   }
   .about-me-section__left-avatar .image-wrapper {
     width: 75% !important;
@@ -1013,8 +1018,8 @@ body {
   .about-me-section__right-texts {
     padding: 0 !important;
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
   }
   .skills-section__grid-container {
     gap: 2.5em !important;
@@ -1062,21 +1067,21 @@ body {
   }
   .about-me-section__contents {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .about-me-section__left-avatar {
     margin-top: 3em;
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
   }
   .about-me-section__left-avatar .image-wrapper {
     width: 60% !important;
   }
   .about-me-section__right-texts {
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     padding: 0 !important;
   }
 }
@@ -1117,19 +1122,19 @@ body {
     border: 3px solid #191919;
     border-radius: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     z-index: 99;
     pointer-events: none;
     -webkit-backdrop-filter: invert(80%);
-            backdrop-filter: invert(80%);
+    backdrop-filter: invert(80%);
   }
   .cursor-follow.grow {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
