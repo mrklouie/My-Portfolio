@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=panchang@200,500,1,700,300,400,800,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-contact">
+    <div class="transition"></div>
+    <div class="transition"></div>
+    <section class="sections-with-padding contact-wrapper">
+      <section class="header-wrapper" data-barba="wrapper">
+        <header>
+          <nav class="nav">
+            <div class="nav__brand-logo">MLD</div>
+            <div class="nav__menu">
+              <div class="burger-line"></div>
+            </div>
+            <ul class="nav__nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+      <main
+        data-barba="container"
+        data-barba-namespace="contact"
+        class="main-contact"
+      >
+        <div class="contact-main-wrapper">
+          <div class="texts">
+            <p>CONTACT</p>
+            <p>MARK LOUIE</p>
+          </div>
+          <div class="form-wrapper">
+            <form action="#" id="contact-form">
+              <input type="hidden" name="to_name" value="Mark Louie" />
+              <input type="hidden" name="contact_number" />
+              <div class="form-group input-name">
+                <label for="fname">Name</label>
+                <input
+                  id="fname"
+                  type="text"
+                  name="from_name"
+                  placeholder="Full name"
+                  required
+                />
+              </div>
+              <div class="form-group input-email">
+                <label for="fname">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="user_email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+
+              <div class="form-group input-textarea">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Please write your message here.."
+                ></textarea>
+              </div>
+              <button type="submit">SEND A MESSAGE</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+      integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="js/nav.js"></script>
+    <script src="js/email.js"></script>
+  </body>
+</html>

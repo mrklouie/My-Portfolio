@@ -1,0 +1,339 @@
+@import "./resets";
+@import "./variables";
+@import "./nav";
+@import "./hero";
+@import "./works";
+@import "./about";
+@import "./skills";
+@import "./contact";
+@import "./seperate-contact";
+
+:root {
+  --xl: 6vw;
+  --brand-logo: 1.5rem;
+  --fs-xl: clamp(1.5rem, 8vw, 4rem);
+  --fs-regular: clamp(0.7rem, 2vw, 1.3rem);
+  --section-padding: 10%;
+  --navbar-padding: 5em;
+  --navbar-width: 20%;
+}
+
+.header-home {
+  padding: 0 10%;
+}
+
+.main-contact {
+  will-change: transform;
+}
+
+.overlay {
+  transform: translateX(-100%);
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  transition: transform 0.3s ease;
+}
+.overlay.active {
+  transform: translateX(0%);
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-color: getColor(primary);
+}
+
+.transition {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  z-index: 99;
+  pointer-events: none;
+  transform-origin: top;
+  transform: scaleY(0);
+}
+.transition:nth-child(1) {
+  background-color: getColor(secondary);
+}
+.transition:nth-child(2) {
+  background-color: getColor(primary);
+}
+
+.container {
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  //set this min-height when it the works scrollTrigger is disabled
+}
+
+.body-contact,
+.body-home {
+  transition: all 0.2s ease-in-out;
+}
+
+.container.active {
+  min-height: 100vh !important;
+}
+
+.sections-with-padding {
+  overflow: hidden;
+  padding: 0 10%;
+  width: 100%;
+  min-height: 100%;
+}
+
+.with-padding {
+  overflow: hidden;
+  padding: 5em 10% 0 10%;
+}
+
+.section-title {
+  padding: 5em 0;
+  width: 100%;
+  & span {
+    font-size: var(--fs-xl);
+    font-weight: getFontWeight(bold);
+  }
+}
+
+.element {
+  width: 500px;
+  height: 500px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//ALL MEDIA QUERIES
+
+//MOBILES
+@media (max-width: 386px) {
+  .contact-section {
+    &__contents {
+      padding: 1rem 0 !important;
+    }
+  }
+  .skills-section {
+    &__grid-container {
+      gap: 2.5em !important;
+      & .skill {
+        width: 4rem !important;
+        height: 4rem !important;
+        & .detail {
+          & span {
+            font-size: 0.6rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  :root {
+    --brand-logo: 1rem;
+    --navbar-padding: 2em;
+    --navbar-width: 60%;
+  }
+
+  .container {
+    overflow-x: hidden;
+  }
+
+  .slide {
+    display: none;
+  }
+
+  .hero {
+    &__adcopy {
+      padding: 5em 0 !important;
+    }
+    &__cta-wrapper {
+      color: getColor(secondary);
+      position: absolute;
+      right: 0;
+      bottom: 40%;
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      transition: 0.3s ease-out;
+      & span {
+        font-size: clamp(0.6rem, 3vw, 1rem);
+        // font-size: 3vw;
+        text-align: right;
+        cursor: pointer;
+        font-weight: getFontWeight(bold);
+      }
+
+      &.hover {
+        color: getColor(primaryDarker1);
+        & svg path {
+          fill: getColor(primaryDarker1);
+        }
+      }
+    }
+
+    &__cta-circle {
+      cursor: pointer;
+      width: 15vw;
+      height: 15vw;
+      border: 3px solid getColor(primaryDarker1);
+      border-radius: 50%;
+    }
+  }
+
+  .about-me-section {
+    &__left-avatar {
+      order: 2;
+      & .image-wrapper {
+        width: 75% !important;
+      }
+    }
+
+    &__right-texts {
+      padding: 0 !important;
+      order: 1;
+    }
+  }
+
+  .skills-section {
+    &__grid-container {
+      gap: 2.5em !important;
+      & .skill {
+        & .detail {
+          & span {
+            font-size: 0.6rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-section {
+    &__contents {
+      padding: 15rem 0 !important;
+    }
+  }
+}
+
+.anim-c {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .skills-section {
+    &__grid-container {
+      gap: 3.5em;
+      & .skill {
+        width: 4.5rem;
+        height: 4.5rem;
+        & .detail {
+          & span {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 839px) {
+  :root {
+    --navbar-width: 50% !important;
+  }
+  .contact-section {
+    &__contents {
+      padding: 20rem 0 !important;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .works-section {
+    display: none;
+  }
+  .works-section-mobile {
+    display: block !important;
+  }
+
+  .about-me-section {
+    &__contents {
+      flex-wrap: wrap;
+    }
+
+    &__left-avatar {
+      margin-top: 3em;
+      order: 2;
+      & .image-wrapper {
+        width: 60% !important;
+      }
+    }
+
+    &__right-texts {
+      order: 1;
+      padding: 0 !important;
+    }
+  }
+}
+
+//DESKTOP SMALL SCREENS
+@media (max-width: 1180px) {
+  .works-section-mobile {
+    display: none;
+  }
+  .hero {
+    &__avatar {
+      position: static;
+      width: 100%;
+
+      & .square-patterns {
+        display: none;
+      }
+    }
+  }
+
+  .about-me-section {
+    &__left-avatar {
+      & .image-wrapper {
+        width: 100%;
+      }
+    }
+
+    &__right-texts {
+      padding: 0 5em;
+    }
+  }
+}
+@media (max-width: 1500px) {
+  :root {
+    --navbar-width: 35%;
+  }
+  .contact-section {
+    &__contents {
+      padding: 23rem 0;
+    }
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .cursor-follow {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid getColor(secondary);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-out;
+    z-index: 99;
+    pointer-events: none;
+    backdrop-filter: invert(80%);
+  }
+  .cursor-follow.grow {
+    transform: scale(2);
+    transform-origin: 100% 100%;
+  }
+}
